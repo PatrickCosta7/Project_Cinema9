@@ -1,0 +1,135 @@
+@font-face {
+    font-family: lobster;
+    src: url("../_fonts/lobs/Lobster-Regular.ttf");
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+.titulo {
+    font-family: lobster;
+    text-align: center;
+}
+.titulo2 {
+    font-family: lobster;
+}
+.titulo3{
+    font-family: lobster;
+    text-align: end;
+}
+
+.subTit {
+    font-family: lobster;
+    font-size: 20;
+    text-align: center;
+
+}
+
+.regua{
+    font-size: 13px;
+}
+
+.regua2{
+    font-size: 11px;
+}
+
+#logo{
+    width: 40%;
+}
+
+.lobs{
+    font-family: lobster;
+    color: #d6d6de;
+}
+
+.lobs#logi{
+    color: #f5b026;
+}
+.lobs:hover{
+    color: #ffc042;
+}
+
+.coresP{
+    background-color: #0043ab;
+    color: white;
+}
+
+.corBotao{
+    background-color:#f5b026;
+    transition: background-color 0.3s;
+    
+}
+
+.corBotao:hover{
+    background-color: #2779f5;
+}
+
+.assento{
+    background-color: #0043ab;
+}
+
+.assento:focus{
+    background-color: #f5b026;
+}
+
+.poster{
+    width: 80%
+}
+
+.carousel-inner{
+    max-height: 1200px ;
+}
+
+.cartaoBlack{
+    background-color: #0043ab;
+}
+
+.col-centered {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    transition: .5s ease;
+    background-color: #cacaca;
+  }
+
+  .overlay:hover {
+    opacity: 0.95;
+    background-color: #2779f5;
+  }
+ 
+  
+  .text {
+    color: white;
+    font-family: lobster;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  
+ 
+

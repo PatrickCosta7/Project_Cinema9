@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="_css/estilo.css">
+
+    <title>Cinema 9: Home</title>
+    <link rel="icon" type="image/x-icon" href="./_imagens/logo_icon.png">
+</head>
+<body>
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark coresP">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="_imagens/logo_2.png" alt="Logo cinema9" width="170px" height="60px">
+          </a>
+          
+          <button class="navbar-toggler"
+          type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" aria-controls="navbarNav" 
+          aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#nossH"><h5 class="lobs">Quem somos?</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicos"><h5 class="lobs">Serviços</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="abrirModal()">
+                  <h5 class="lobs" id="logi">Login</h5>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Caroussel -->
+
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+
+        <div class="carousel-item active" data-bs-interval="4500">
+          <img src="_imagens/poster_cinema9_final.png" class="d-block h-50 w-100" >
+        </div>
+
+        <div class="carousel-item" data-bs-interval="4500">
+          <a href="wwii.html"><img src="_imagens/post_wwii_final.png" class="d-block h-50 w-100" ></a>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="4500">
+          <a href="dune.html"><img src="_imagens/Dune_post_carousel.png" class="d-block h-50 w-100" ></a>
+          <div class="carousel-caption d-none d-md-block">
+            <a href="dune.html"><h1 class="lobs">A nova representação de um clássico</h1></a>
+            <p class="lobsterFont titulo">A ficção ciéntifica de Frank Herbert dirigido por Denis Villeneuve</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="4500">
+          <a href="topG.html"><img src="_imagens/TGun_post_carousel.png" class="d-block w-100" ></a>
+          <div class="carousel-caption d-none d-md-block">
+            <a href="topG.html"><h1 class="lobs">Fell the need...</h1></a>
+            <p class="lobsterFont titulo">A continuação do ícone dos anos 80</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="4500">
+          <a href="jb.html"><img src="_imagens/JB_post_caroussel.png" class="d-block w-100" ></a>
+          <div class="carousel-caption d-none d-md-block">
+            <a href="jb.html"><h1 class="lobs">Daniel Craig como 007 pela última vez</h1></a>
+            <p class="lobsterFont titulo">A franquia criada em 62 está de volta com seu 25° filme</p>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- cards filmes -->
+    <section>
+      <div class="container pt-4">
+
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+
+          <div class="col">
+            <div class="card m-3">
+              <a href="dune.html"><img src="_imagens/poster1.jpg" class="card-img-top" alt="poster1"></a>
+              <div class="card-body">
+                <h5 class="card-title">Dune</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum officiis non magni quidem. At quo aperiam ex labore incidunt repellendus necessitatibus, esse vel consequuntur accusantium.</p>
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col">
+            <div class="card m-3">
+              <a href="topG.html"><img src="_imagens/poster2.jpg" class="card-img-top" alt="poster2"></a>
+              <div class="card-body">
+                <h5 class="card-title">Top Gun: Maverick</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum officiis non magni quidem. At quo aperiam ex labore incidunt repellendus necessitatibus, esse vel consequuntur accusantium.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card m-3">
+              <a href="jb.html"><img src="_imagens/poster3.jpg" class="card-img-top" alt="poster3"></a>
+              <div class="card-body">
+                <h5 class="card-title">Sem tempo para morrer</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum officiis non magni quidem. At quo aperiam ex labore incidunt repellendus necessitatibus, esse vel consequuntur accusantium.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card m-3">
+              <a href="bat.html"><img src="_imagens/poster4.png" class="card-img-top" alt="poster4"></a>
+              <div class="card-body">
+                <h5 class="card-title">O Batman</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum officiis non magni quidem. At quo aperiam ex labore incidunt repellendus necessitatibus, esse vel consequuntur accusantium.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card m-3">
+              <a href="french.html"><img src="_imagens/poster5.jpeg" class="card-img-top" alt="poster5"></a>
+              <div class="card-body">
+                <h5 class="card-title">A crônica francesa</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum officiis non magni quidem. At quo aperiam ex labore incidunt repellendus necessitatibus, esse vel consequuntur accusantium.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card m-3">
+              <a href="king.html"><img src="_imagens/poster6.jpg" class="card-img-top" alt="poster6"></a>
+              <div class="card-body">
+                <h5 class="card-title">King's man: A origem</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum officiis non magni quidem. At quo aperiam ex labore incidunt repellendus necessitatibus, esse vel consequuntur accusantium.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card m-3">
+          <a href="wwii.html"><img src="_imagens/especialfull.jpg" class="card-img-top" alt="luftwaffe"></a>
+          <div class="card-body">
+            <h5 class="card-title">Especial de Segunda Guerra mundial</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laudantium, exercitationem est molestiae repellat a ipsum, quam itaque, quidem vel voluptatum sunt cum excepturi tempora incidunt dolorum dicta? Molestiae animi deserunt sed doloribus similique.</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+
+        <!-- Nossa história -->
+    <section id="nossH" class="p-5">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5">
+              <h2>Tudo começou em 1985</h2>
+              <p class="lead">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Similique deleniti possimus magnam corporis ratione facere!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis, quo voluptates est necessitatibus quos ipsum hic. Provident aperiam aspernatur quibusdam quam tempora illum neque quod, incidunt, odio, blanditiis corrupti. Aperiam quis amet fugiat. Iure est architecto vitae sapiente molestias excepturi atque, animi similique! Molestiae quae ipsa cumque et ratione?
+              </p>
+            </div>
+            <div class="col-md">
+              <img src="_imagens/deVolta.jpg" class="img-fluid" alt="logo" />
+            </div>
+          </div>
+        </div>
+    </section>
+  
+    <section class="p-5 bg-dark text-light">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+              <img src="_imagens/logo.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-md p-5">
+              <h2>Venha conhecer sua próxima aventura!</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias minus consectetur explicabo cupiditate porro, molestias eum, eligendi id natus possimus, voluptates fuga facilis! Quidem, dolorum minus excepturi officiis iusto eius incidunt pariatur reprehenderit amet iste ipsa quo quod suscipit libero vitae similique debitis quas perferendis porro? Quis cupiditate perferendis natus quam esse, nulla dicta consequuntur possimus magnam soluta hic ipsa illum. Animi eveniet quasi nulla accusantium sit, ipsum sapiente aperiam error! Eos distinctio aliquam architecto suscipit fugiat, porro dolores id sapiente nesciunt, recusandae tempore officia ea at sit optio asperiores dolore quam? Soluta ipsum quam praesentium. Soluta deserunt tempora perferendis?
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+      <!--Serviços-->
+    <section id="servicos" class=" p-2">
+      <div class="container p-5 mb-5">
+        
+        <div class="row row-cols-1 row-cols-md-3 g-1">
+
+          <div class="col">
+            <div class="card m-1">
+              <a href="#servicos" onclick="abrirOffL()">
+                <img src="_imagens/metro.jpg" class="card-img-top" alt="horarios" id="metro">
+                <div class="overlay"><div class="text">Horários</div></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card m-1">
+              <a href="#servicos" onclick="abrirModal2()">
+                <img src="_imagens/wolf.png" class="card-img-top" alt="preços">
+                <div class="overlay"><div class="text">Preços</div></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card m-1">
+              <a href="#servicos" onclick="abrirOffR()">
+                <img src="_imagens/miaMIlk.png" class="card-img-top" alt="Alimentação">
+                <div class="overlay"><div class="text">Alimentação</div></div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+     <!-- Modal 1 -->
+     <div class="modal fade" id="cadastroM" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="enrollLabel">Login de usuário</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                    <label for="first-name" class="col-form-label">
+                        Login
+                    </label>
+                    <input type="text" class="form-control" id="first-name">
+                </div>
+                <div class="mb-3">
+                  <label for="last-name" class="col-form-label">
+                      Senha
+                  </label>
+                  <input type="text" class="form-control" id="last-name">
+                </div>
+          
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <a class="nav-link" href="#"><button class="btn corBotao" data-bs-toggle="modal" data-bs-target="#enroll2">Cadastrar</button></a>
+            <a href="#"><button type="button" class="btn corBotao">Entrar</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="enroll2" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="enrollLabel">Login de usuário</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+                            <!-- Formulário Modal -->
+      <h1 class="text-center fs-2 py-3">Cadastro</h1>
+
+      <div class="container">
+
+        <div class="row py-2">
+          <div class="col">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                <input class="form-control" type="text" placeholder="Digite aqui seu nome" aria-label="default input example">
+            </div>
+          </div>
+          <div class="col offset-md-1">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+          </div>
+        </div>
+
+        <div class="row py-2">
+        <div class="col">
+          <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">CPF/CNPJ:</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1">
+          </div>
+        </div>
+        <div class="col offset-md-1">
+          <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Telefone/Celular</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="(xx)xxxxx-xxxx">
+          </div>
+        </div>
+      </div>
+                              <!-- formulario cep - linha 1 -->
+
+        <div class="row py-2">
+          <div class="col">
+            <div class="mb-3">
+                <label class="form-label">Cep:</label>
+                <input class="form-control" type="text" aria-label="default input example" onblur="pesquisacep(this.value);">
+            </div>
+          </div>
+
+          <div class="col offset-md-1">
+            <div class="mb-3">
+                <label class="form-label">Rua:</label>
+                <input class="form-control" type="text" aria-label="default input example" id="rua">
+            </div>
+          </div>
+        </div> 
+
+                              <!-- formulario cep - linha 2 -->
+        <div class="row py-2">
+
+          <div class="col"> 
+            <div class="mb-3">
+                <label class="form-label">Cidade:</label>
+                <input class="form-control" type="text" aria-label="default input example" id="cidade">
+            </div>
+          </div>
+
+          <div class="col offset-md-1">
+            <div class="mb-3">
+                <label class="form-label">Estado:</label>
+                <input class="form-control" type="text" aria-label="default input example" id="uf">
+            </div>
+          </div>
+
+        </div>   
+      </div>
+            <div class="modal-footer">
+              <a href="#" class="nav-link"><button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#cadastroM">Voltar</button></a>
+              <button type="button" class="btn corBotao">Cadastrar conta</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+     <!-- Modal 3 -->
+     <div class="modal fade" id="precos" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title titulo" id="enrollLabel">Preços</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <div class="card text-white cartaoBlack mb-1">
+              <div class="card-body">
+                <h5 class="card-title titulo2">Segunda, Terça e Quarta</h5>
+                <p class="card-text"> Inteira: R$ 20,00 - Meia: R$ 10,00 </p>
+              </div>
+            </div>
+    
+    
+            <div class="card text-white cartaoBlack mb-1">
+              <div class="card-body">
+                <h5 class="card-title titulo2">Quinta e Sexta</h5>
+                <p class="card-text"> Inteira: R$ 30,00 - Meia: R$ 15,00  </p>
+              </div>
+            </div>
+    
+            <div class="card text-white cartaoBlack mb-1">
+              <div class="card-body">
+                <h5 class="card-title titulo2">Sábado e Domingo</h5>
+                <p class="card-text"> Inteira: R$ 34,00 - Meia: R$ 17,00 </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- OffCanvas -->
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offL" aria-labelledby="offcanvasLeftLabel">
+      <div class="offcanvas-header">
+        <h3 id="offcanvasTopLabel" class="titulo">Horários</h3>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        
+        <div class="card text-white cartaoBlack mb-1">
+          <div class="card-body">
+            <h5 class="card-title titulo2">Segunda, Terça e Quarta</h5>
+            <p class="card-text"> 13hrs até as 21hrs </p>
+          </div>
+        </div>
+
+        <div class="card text-white cartaoBlack mb-1">
+          <div class="card-body">
+            <h5 class="card-title titulo2">Quinta</h5>
+            <p class="card-text"> 13hrs até as 23hrs </p>
+          </div>
+        </div>
+
+        <div class="card text-white cartaoBlack mb-1">
+          <div class="card-body">
+            <h5 class="card-title titulo2">Sexta e Sábado</h5>
+            <p class="card-text"> 13hrs até as 00hrs - Evento especial: até as 06hrs </p>
+          </div>
+        </div>
+
+        <div class="card text-white cartaoBlack mb-1">
+          <div class="card-body">
+            <h5 class="card-title titulo2">domingo</h5>
+            <p class="card-text"> 13hrs até as 21hrs</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offR" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h3 id="offcanvasTopLabel" class="titulo">Alimentação</h3>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+
+        <div class="card mb-3">
+          <img src="_imagens/pipoca.jpg" class="card-img-top" alt="pipoca1">
+          <div class="card-body">
+            <h5 class="card-title">Pipoca salgada</h5>
+            <p class="card-text">Ingredientes: milho e sal</p>
+            <p class="card-text">Preço: R$ 7,00</p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <img src="_imagens/popDoc .jpg" class="card-img-top" alt="pipoca2">
+          <div class="card-body">
+            <h5 class="card-title">Pipoca caramelada</h5>
+            <p class="card-text">Ingredientes: milho, creme de caramelo </p>
+            <p class="card-text">Preço: R$ 10,00</p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <img src="_imagens/burgi.jpg" class="card-img-top" alt="hamburger">
+          <div class="card-body">
+            <h5 class="card-title">Cheeseburger c/ batatas</h5>
+            <p class="card-text">Ingredientes: pão, buguer, queijo, molho especial, batata</p>
+            <p class="card-text">Preço: R$ 25,00</p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <img src="_imagens/sanduba.jpg" class="card-img-top" alt="sandwich">
+          <div class="card-body">
+            <h5 class="card-title">Sanduba Clássico</h5>
+            <p class="card-text">Ingredientes: pão, queijo, presunto, maionese, alface e tomate</p>
+            <p class="card-text">Preço: R$ 15,00</p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <img src="_imagens/amendobobo.jpg" class="card-img-top" alt="peanut">
+          <div class="card-body">
+            <h5 class="card-title">Amendoin</h5>
+            <p class="card-text">Tipo: japones, espanhol, amendoim doce</p>
+            <p class="card-text">Preço: R$ 7,00</p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <img src="_imagens/breja.jpg" class="card-img-top" alt="beer">
+          <div class="card-body">
+            <h5 class="card-title">Cerveja</h5>
+            <p class="card-text">Tipos: Brahma, Amstel, Heineken</p>
+            <p class="card-text">Preço: R$ 5,00</p>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <img src="_imagens/juic.jpg" class="card-img-top" alt="juice">
+          <div class="card-body">
+            <h5 class="card-title">Bebidas n/alcoólicas</h5>
+            <p class="card-text">Tipos: Suco, aguá, refrigetante</p>
+            <p class="card-text">Preço: R$ 4,00</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+
+        <div class="container p-4 pb-0">
+          <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="bi bi-facebook"></i></a>
+      
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="bi bi-twitter"></i
+            ></a>
+      
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="bi bi-instagram"></i
+            ></a>
+      
+          </section>
+        </div>
+        <div class="text-center p-3 coresP">
+          ©2022 Copyright: Cinema 9
+        </div>
+
+    </footer>
+
+      <script src="_javascript/cadastroCep.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="node_modules/bootstrap-icons/font/bootstrap-icons.json"></script>
+      <script src="_javascript/funcaoModal.js"></script>
+      <script src="_javascript/funcaoOffcanvas.js"></script>
+
+</body>
+</html>
