@@ -1,7 +1,7 @@
 # Projeto Cinema9
 Projeto de interface para site de cinema criado em Bootstrap 5
 
-# Como visualizar? 
+## Como visualizar? 
 Basta somente acessar o link: 
 
     https://project-cinema9.vercel.app/
