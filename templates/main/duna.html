@@ -1,0 +1,49 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+</div id="dune">
+
+  <!-- img e card -->    
+  <div class="container-fluid">
+    <div class="row justify-content-start">
+      <div class="col-sm-6">
+        <div class="container">
+          <div class="card border-0 shadow my-5">
+            <div class="card-body p-3">
+              <h1 class="fw-light titulo">Duna</h1>
+              <p class="lead subTit">Denis Villeneuve e sua adaptação do romance de Frank Herbert</p>
+              <p class="lead">Duis consectetur anim et sint proident voluptate nisi ex aute magna magna. Fugiat voluptate nisi laboris amet incididunt duis tempor esse deserunt. Tempor sunt ad consequat commodo quis duis id magna esse excepteur est duis. Esse incididunt non mollit occaecat anim nulla. Tempor esse amet ad ea laborum sint fugiat cupidatat commodo consequat do elit cupidatat. Mollit irure consectetur occaecat ipsum eiusmod et mollit anim laborum amet consectetur pariatur reprehenderit. Amet ipsum adipisicing ut incididunt incididunt consectetur aliqua ad labore.
+              </p>
+              <p class="lead">Dolore velit et consequat occaecat minim id. Minim occaecat irure ipsum officia eu non officia adipisicing id. Ipsum nulla mollit do cupidatat culpa ut quis excepteur velit id occaecat voluptate. </p>
+              <p class="lead">Dolore velit et consequat occaecat minim id. Minim occaecat irure ipsum officia eu non officia adipisicing id. Ipsum nulla mollit do cupidatat culpa ut quis excepteur velit id occaecat voluptate. Quis culpa officia eu occaecat sint eu ullamco pariatur veniam incididunt qui. Mollit officia mollit ullamco commodo cupidatat labore commodo reprehenderit sint id pariatur tempor. Nulla adipisicing culpa in elit veniam ea aliqua deserunt velit. Irure qui eiusmod excepteur ut minim quis sit fugiat proident cillum. </p>
+              <div style="height: 100px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+
+  <!-- compre o ing -->
+  <div class="container-fluid bg-dark">
+    <div class="container">
+
+      <div class="card text-center bg-dark border-0">
+
+        <div class="card-body">
+          <h2 class="titulo text-light p-1">Compre seu ingresso</h2>
+          <a href="{% url 'index' %}"><button type="button" class="btn corBotao">Voltar</button></a>
+          <button type="button" class="btn corBotao" data-bs-toggle="modal" data-bs-target="#cadastroM">Comprar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<div>
+
+
+  
+
+    {% endblock %}

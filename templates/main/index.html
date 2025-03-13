@@ -58,7 +58,7 @@
 
           <div class="col">
             <div class="card m-3">
-              <a href="dune.html"><img src="{% static 'assets/imagens/poster1.jpg' %}" class="card-img-top" alt="poster1"></a>
+              <a href="{% url 'movie_page' 'duna' %}"><img src="{% static 'assets/imagens/poster1.jpg' %}" class="card-img-top" alt="poster1"></a>
               <div class="card-body">
                 <h5 class="card-title">Dune</h5>
                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum officiis non magni quidem. At quo aperiam ex labore incidunt repellendus necessitatibus, esse vel consequuntur accusantium.</p>
@@ -68,7 +68,7 @@
  
           <div class="col">
             <div class="card m-3">
-              <a href="topG.html"><img src="{% static 'assets/imagens/poster2.jpg' %}" class="card-img-top" alt="poster2"></a>
+              <a href="{% url 'movie_page' 'topgun' %}"><img src="{% static 'assets/imagens/poster2.jpg' %}" class="card-img-top" alt="poster2"></a>
               <div class="card-body">
                 <h5 class="card-title">Top Gun: Maverick</h5>
                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum officiis non magni quidem. At quo aperiam ex labore incidunt repellendus necessitatibus, esse vel consequuntur accusantium.</p>
@@ -78,7 +78,7 @@
 
           <div class="col">
             <div class="card m-3">
-              <a href="jb.html"><img src="{% static 'assets/imagens/poster3.jpg' %}" class="card-img-top" alt="poster3"></a>
+              <a href="{% url 'movie_page' '007' %}"><img src="{% static 'assets/imagens/poster3.jpg' %}" class="card-img-top" alt="poster3"></a>
               <div class="card-body">
                 <h5 class="card-title">Sem tempo para morrer</h5>
                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum officiis non magni quidem. At quo aperiam ex labore incidunt repellendus necessitatibus, esse vel consequuntur accusantium.</p>
@@ -88,7 +88,7 @@
 
           <div class="col">
             <div class="card m-3">
-              <a href="bat.html"><img src="{% static 'assets/imagens/poster4.png' %}" class="card-img-top" alt="poster4"></a>
+              <a href="{% url 'movie_page' 'batman' %}"><img src="{% static 'assets/imagens/poster4.png' %}" class="card-img-top" alt="poster4"></a>
               <div class="card-body">
                 <h5 class="card-title">O Batman</h5>
                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum officiis non magni quidem. At quo aperiam ex labore incidunt repellendus necessitatibus, esse vel consequuntur accusantium.</p>
@@ -98,7 +98,7 @@
 
           <div class="col">
             <div class="card m-3">
-              <a href="french.html"><img src="{% static 'assets/imagens/poster5.jpeg' %}" class="card-img-top" alt="poster5"></a>
+              <a href="{% url 'movie_page' 'french' %}"><img src="{% static 'assets/imagens/poster5.jpeg' %}" class="card-img-top" alt="poster5"></a>
               <div class="card-body">
                 <h5 class="card-title">A crônica francesa</h5>
                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum officiis non magni quidem. At quo aperiam ex labore incidunt repellendus necessitatibus, esse vel consequuntur accusantium.</p>
@@ -108,7 +108,7 @@
 
           <div class="col">
             <div class="card m-3">
-              <a href="king.html"><img src="{% static 'assets/imagens/poster6.jpg' %}" class="card-img-top" alt="poster6"></a>
+              <a href="{% url 'movie_page' 'king' %}"><img src="{% static 'assets/imagens/poster6.jpg' %}" class="card-img-top" alt="poster6"></a>
               <div class="card-body">
                 <h5 class="card-title">King's man: A origem</h5>
                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum officiis non magni quidem. At quo aperiam ex labore incidunt repellendus necessitatibus, esse vel consequuntur accusantium.</p>
@@ -119,7 +119,7 @@
         </div>
 
         <div class="card m-3">
-          <a href="wwii.html"><img src="{% static 'assets/imagens/especialfull.jpg' %}" class="card-img-top" alt="luftwaffe"></a>
+          <a href="{% url 'movie_page' 'wwii' %}"><img src="{% static 'assets/imagens/especialfull.jpg' %}" class="card-img-top" alt="luftwaffe"></a>
           <div class="card-body">
             <h5 class="card-title">Especial de Segunda Guerra mundial</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laudantium, exercitationem est molestiae repellat a ipsum, quam itaque, quidem vel voluptatum sunt cum excepturi tempora incidunt dolorum dicta? Molestiae animi deserunt sed doloribus similique.</p>
