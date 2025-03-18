@@ -16,11 +16,12 @@
   }
 
   #dune { 
-    background: url('../_imagens/dune-full.jpg') no-repeat center center fixed;
+    background: url('../assets/imagens/dune-full.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-color: blueviolet;
   }
 
   #bat { 
