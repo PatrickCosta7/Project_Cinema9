@@ -1,0 +1,72 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+<body id="movies_background">
+
+    <!-- img e card -->    
+    <div class="row row-cols-1 row-cols-md-2 g-4 m-5">
+
+      <div class="col">
+        <div class="card mt-3 mb-4">
+          <img src="{% static 'assets/imagens/anois1.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title titulo">8 de Abril das 23pm até as 6am </h5>
+            <p class="card-text">Filme especial 1 - Filme especial 2 - Filme especial 3</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mt-3 mb-4">
+          <img src="{% static 'assets/imagens/thepian.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title titulo">9 de Abril das 23pm até as 6am </h5>
+            <p class="card-text">Filme especial 1 - Filme especial 2 - Filme especial 3</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mt-5 mb-3">
+          <img src="{% static 'assets/imagens/1993.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title titulo">22 de Abril das 23pm até as 6am </h5>
+            <p class="card-text">Filme especial 1 - Filme especial 2 - Filme especial 3</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mt-5 mb-3">
+          <img src="{% static 'assets/imagens/rabbit1.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title titulo">23 de Abril das 23pm até as 6am </h5>
+            <p class="card-text">Filme especial 1 - Filme especial 2 - Filme especial 3</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- compre o ing -->
+    <div class="container-fluid bg-dark">
+      <div class="container">
+
+        <div class="card text-center bg-dark border-0">
+
+          <div class="card-body">
+            <h2 class="titulo text-light p-1">Compre seu ingresso</h2>
+            <a href="index.html"><button type="button" class="btn corBotao">Voltar</button></a>
+            <button type="button" class="btn corBotao" data-bs-toggle="modal" data-bs-target="#cadastroM">Comprar</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+{% endblock %}
