@@ -4,7 +4,7 @@
 
     <!-- Caroussel -->
     <div id="carouselExampleControls" class="carousel slide carousel-fade d-none d-sm-block" data-bs-ride="carousel">
-      <div class="carousel-inner" style="width: 100%;height: 40em !important">
+      <div class="carousel-inner">
 
 
         <div class="carousel-item active" data-bs-interval="4500">
@@ -12,34 +12,34 @@
         </div>
 
         <div class="carousel-item" data-bs-interval="4500">
-          <a href="wwii.html"><img src="{% static 'assets/imagens/carousel_01.jpg' %}" class="d-block h-50 w-100"></a>
-          <div class="carousel-caption d-none d-md-block">
-            <a href="dune.html"><h1 class="lobs">Lorem, ipsum dolor.</h1></a>
+          <a href="{% url 'movie_page' 'pagina_filme' %}"><img src="{% static 'assets/imagens/carousel_01.jpg' %}" class="d-block h-50 w-100"></a>
+          <div class="carousel-caption">
+            <a href="{% url 'movie_page' 'pagina_filme' %}"><h1 class="lobs">Lorem, ipsum dolor.</h1></a>
             <p class="lobsterFont titulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
         </div>
 
         <div class="carousel-item" data-bs-interval="4500">
-          <a href="dune.html"><img src="{% static 'assets/imagens/Dune_post_carousel.png' %}" class="d-block h-50 w-100" ></a>
+          <a href="{% url 'movie_page' 'pagina_filme' %}"><img src="{% static 'assets/imagens/carousel_02.jpg' %}" class="d-block h-50 w-100" ></a>
           <div class="carousel-caption d-none d-md-block">
-            <a href="dune.html"><h1 class="lobs">A nova representação de um clássico</h1></a>
-            <p class="lobsterFont titulo">A ficção ciéntifica de Frank Herbert dirigido por Denis Villeneuve</p>
+            <a href="{% url 'movie_page' 'pagina_filme' %}"><h1 class="lobs">Lorem, ipsum.</h1></a>
+            <p class="lobsterFont titulo">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
           </div>
         </div>
 
         <div class="carousel-item" data-bs-interval="4500">
-          <a href="topG.html"><img src="{% static 'assets/imagens/TGun_post_carousel.png' %}" class="d-block w-100" ></a>
+          <a href="{% url 'movie_page' 'pagina_filme' %}"><img src="{% static 'assets/imagens/carousel_03.jpg' %}" class="d-block w-100" ></a>
           <div class="carousel-caption d-none d-md-block">
-            <a href="topG.html"><h1 class="lobs">Fell the need...</h1></a>
-            <p class="lobsterFont titulo">A continuação do ícone dos anos 80</p>
+            <a href="{% url 'movie_page' 'pagina_filme' %}"><h1 class="lobs">Lorem ipsum dolor sit amet.</h1></a>
+            <p class="lobsterFont titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint.</p>
           </div>
         </div>
 
         <div class="carousel-item" data-bs-interval="4500">
-          <a href="jb.html"><img src="{% static 'assets/imagens/JB_post_caroussel.png' %}" class="d-block w-100" ></a>
+          <a href="{% url 'movie_page' 'pagina_filme' %}"><img src="{% static 'assets/imagens/carousel_04.jpg' %}" class="d-block w-100" ></a>
           <div class="carousel-caption d-none d-md-block">
-            <a href="jb.html"><h1 class="lobs">Daniel Craig como 007 pela última vez</h1></a>
-            <p class="lobsterFont titulo">A franquia criada em 62 está de volta com seu 25° filme</p>
+            <a href="{% url 'movie_page' 'pagina_filme' %}"><h1 class="lobs">Lorem, ipsum.</h1></a>
+            <p class="lobsterFont titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo delectus velit alias?</p>
           </div>
         </div>
 
@@ -123,9 +123,9 @@
         </div>
 
         <div class="card m-3">
-          <a href="{% url 'movie_page' 'evento_especial' %}"><img src="{% static 'assets/imagens/especialfull.jpg' %}" class="card-img-top" alt="evento_especial" style="width: 100%;height: 32vw;object-fit: cover;"></a>
+          <a href="{% url 'movie_page' 'evento_especial' %}"><img src="{% static 'assets/imagens/special_event.jpg' %}" class="card-img-top" alt="evento_especial" style="width: 100%;height: 32vw;object-fit: cover;"></a>
           <div class="card-body">
-            <h5 class="card-title">Especial de Segunda Guerra mundial</h5>
+            <h5 class="card-title">Eventos especiais - Cinema 9</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laudantium, exercitationem est molestiae repellat a ipsum, quam itaque, quidem vel voluptatum sunt cum excepturi tempora incidunt dolorum dicta? Molestiae animi deserunt sed doloribus similique.</p>
           </div>
         </div>
@@ -206,132 +206,8 @@
       </div>
     </section>
 
-     <!-- Modal 1 -->
-     <div class="modal fade" id="cadastroM" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title text-center" id="enrollLabel">Login de usuário</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-                <div class="mb-3">
-                    <label for="first-name" class="col-form-label">
-                        Login
-                    </label>
-                    <input type="text" class="form-control" id="first-name">
-                </div>
-                <div class="mb-3">
-                  <label for="last-name" class="col-form-label">
-                      Senha
-                  </label>
-                  <input type="text" class="form-control" id="last-name">
-                </div>
-          
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            <a class="nav-link" href="#"><button class="btn corBotao" data-bs-toggle="modal" data-bs-target="#enroll2">Cadastrar</button></a>
-            <a href="#"><button type="button" class="btn corBotao">Entrar</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <div class="modal fade" id="enroll2" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title text-center" id="enrollLabel">Login de usuário</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            
-                            <!-- Formulário Modal -->
-      <h1 class="text-center fs-2 py-3">Cadastro</h1>
-
-      <div class="container">
-
-        <div class="row py-2">
-          <div class="col">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Nome:</label>
-                <input class="form-control" type="text" placeholder="Digite aqui seu nome" aria-label="default input example">
-            </div>
-          </div>
-          <div class="col offset-md-1">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-          </div>
-        </div>
-
-        <div class="row py-2">
-        <div class="col">
-          <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">CPF/CNPJ:</label>
-              <input type="number" class="form-control" id="exampleFormControlInput1">
-          </div>
-        </div>
-        <div class="col offset-md-1">
-          <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Telefone/Celular</label>
-              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="(xx)xxxxx-xxxx">
-          </div>
-        </div>
-      </div>
-                              <!-- formulario cep - linha 1 -->
-
-        <div class="row py-2">
-          <div class="col">
-            <div class="mb-3">
-                <label class="form-label">Cep:</label>
-                <input class="form-control" type="text" aria-label="default input example" onblur="pesquisacep(this.value);">
-            </div>
-          </div>
-
-          <div class="col offset-md-1">
-            <div class="mb-3">
-                <label class="form-label">Rua:</label>
-                <input class="form-control" type="text" aria-label="default input example" id="rua">
-            </div>
-          </div>
-        </div> 
-
-                              <!-- formulario cep - linha 2 -->
-        <div class="row py-2">
-
-          <div class="col"> 
-            <div class="mb-3">
-                <label class="form-label">Cidade:</label>
-                <input class="form-control" type="text" aria-label="default input example" id="cidade">
-            </div>
-          </div>
-
-          <div class="col offset-md-1">
-            <div class="mb-3">
-                <label class="form-label">Estado:</label>
-                <input class="form-control" type="text" aria-label="default input example" id="uf">
-            </div>
-          </div>
-
-        </div>   
-      </div>
-            <div class="modal-footer">
-              <a href="#" class="nav-link"><button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#cadastroM">Voltar</button></a>
-              <button type="button" class="btn corBotao">Cadastrar conta</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-     <!-- Modal 3 -->
-     <div class="modal fade" id="precos" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+    <!-- Modal Preços -->
+    <div class="modal fade" id="precos" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -339,7 +215,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-
+    
             <div class="card text-white cartaoBlack mb-1">
               <div class="card-body">
                 <h5 class="card-title titulo2">Segunda, Terça e Quarta</h5>
@@ -361,7 +237,7 @@
                 <p class="card-text"> Inteira: R$ 34,00 - Meia: R$ 17,00 </p>
               </div>
             </div>
-
+    
           </div>
         </div>
       </div>

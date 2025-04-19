@@ -24,3 +24,127 @@
     </div>
 </nav>
 
+<!-- Modal 1 -->
+<div class="modal fade" id="cadastroM" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="enrollLabel">Login de usuário</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                    Login
+                </label>
+                <input type="text" class="form-control" id="first-name">
+            </div>
+            <div class="mb-3">
+              <label for="last-name" class="col-form-label">
+                  Senha
+              </label>
+              <input type="text" class="form-control" id="last-name">
+            </div>
+      
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <a class="nav-link" href="#"><button class="btn corBotao" data-bs-toggle="modal" data-bs-target="#enroll2">Cadastrar</button></a>
+        <a href="#"><button type="button" class="btn corBotao">Entrar</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="enroll2" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="enrollLabel">Login de usuário</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+                        <!-- Formulário Modal -->
+  <h1 class="text-center fs-2 py-3">Cadastro</h1>
+
+  <div class="container">
+
+    <div class="row py-2">
+      <div class="col">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+            <input class="form-control" type="text" placeholder="Digite aqui seu nome" aria-label="default input example">
+        </div>
+      </div>
+      <div class="col offset-md-1">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+      </div>
+    </div>
+
+    <div class="row py-2">
+    <div class="col">
+      <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">CPF/CNPJ:</label>
+          <input type="number" class="form-control" id="exampleFormControlInput1">
+      </div>
+    </div>
+    <div class="col offset-md-1">
+      <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Telefone/Celular</label>
+          <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="(xx)xxxxx-xxxx">
+      </div>
+    </div>
+  </div>
+                          <!-- formulario cep - linha 1 -->
+
+    <div class="row py-2">
+      <div class="col">
+        <div class="mb-3">
+            <label class="form-label">Cep:</label>
+            <input class="form-control" type="text" aria-label="default input example" onblur="pesquisacep(this.value);">
+        </div>
+      </div>
+
+      <div class="col offset-md-1">
+        <div class="mb-3">
+            <label class="form-label">Rua:</label>
+            <input class="form-control" type="text" aria-label="default input example" id="rua">
+        </div>
+      </div>
+    </div> 
+
+                          <!-- formulario cep - linha 2 -->
+    <div class="row py-2">
+
+      <div class="col"> 
+        <div class="mb-3">
+            <label class="form-label">Cidade:</label>
+            <input class="form-control" type="text" aria-label="default input example" id="cidade">
+        </div>
+      </div>
+
+      <div class="col offset-md-1">
+        <div class="mb-3">
+            <label class="form-label">Estado:</label>
+            <input class="form-control" type="text" aria-label="default input example" id="uf">
+        </div>
+      </div>
+
+    </div>   
+  </div>
+        <div class="modal-footer">
+          <a href="#" class="nav-link"><button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#cadastroM">Voltar</button></a>
+          <button type="button" class="btn corBotao">Cadastrar conta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
